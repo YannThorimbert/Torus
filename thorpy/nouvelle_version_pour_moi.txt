@@ -1,0 +1,12 @@
+1)push
+2)publier sur pypi (voir commandes.txt)
+3)mettre a jour num version (ctrl-H) dans tutorials/install.html, downloads.html et inclure new dans index.html
+4)envoyer le nouveau site via FTP (fileZilla):
+Serveur FTP          : cloud13.netim.net ou ftp.thorpy.org
+Login ou utilisateur : thorpy
+Mot de passe         : Yc6!re1#X
+port 21
+
+OU
+
+chercher mail support@netim du 11 mai 2015

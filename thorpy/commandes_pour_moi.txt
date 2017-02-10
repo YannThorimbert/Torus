@@ -1,0 +1,25 @@
+pypi: http://peterdowns.com/posts/first-time-with-pypi.html
+git: https://www.christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/
+
+NE PAS OUBLIER : changer version dans setup.py et __init__ de thorpy
+
+python setup.py sdist upload -r pypi
+python setup.py bdist upload -r pypi
+python setup.py bdist_wininst upload -r pypi
+python setup.py build --plat-name=win32 bdist_wininst upload
+
+commandes git pour tout faire depuis le début:
+aller dans le répertoire du projet
+>git init
+dans le .gitignore ajouter les trucs a ignorer (*.pyc, *.pyo, __pycache__, ...)
+>git add *
+git status permet de verifier ou on en est
+>git commit -m "mon message"
+informer git qu'un depot existe sur github
+>git remote add origin https://github.com/nomutilisateur/MonProjet.git
+(Nous avons ajouté après le mot origin pour indiquer un nouvel endroit à partir duquel viendront les fichiers. remote est un descripteur de origin, pour indiquer que l’original n’est pas sur l’ordinateur, mais quelque part en ligne.)
+pour lister toutes les origines distantes:
+>git remote -v
+on envoie tout:
+>git push --set-upstream origin master
+Si ça bloque: git push -f origin
